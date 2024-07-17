@@ -1,0 +1,9 @@
+@import './base.scss';
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+.ant-message-notice-content {
+  background-color: var(--dark-active-bgc) !important;
+}

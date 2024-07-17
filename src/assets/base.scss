@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+:root {
+  --dark-color: #ddd;
+  --dark-bgc: #432;
+  --dark-active-bgc: #321;
+  --light-color: var(--dark-bgc);
+  --light-bgc: var(--dark-color);
+}
+
+* {
+  color: var(--dark-color);
+  margin: 0;
+  padding: 0;
+}
+html {
+  .clear_fix:after {
+    content: '.';
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+  }
+
+  .clear_fix {
+    zoom: 1;
+  }
+  font-size: 50px;
+  background-color: var(--dark-bgc);
+  height: 100%;
+  body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    font-family: '微软雅黑';
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    ul,
+    ol,
+    li {
+      list-style: none;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 16px;
+      font-weight: normal;
+    }
+    b,
+    strong {
+      font-weight: normal;
+    }
+    i,
+    em {
+      font-style: normal;
+    }
+    a,
+    u {
+      text-decoration: none;
+    }
+    img {
+      vertical-align: middle;
+    }
+    input,
+    fieldset {
+      outline: none;
+      border: 0;
+    }
+  }
+}
